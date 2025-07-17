@@ -99,7 +99,7 @@ h6{
 #Herocontent {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -128,7 +128,7 @@ h6{
     border-radius: 3px;
 }
 .formEmail{
-    width: 70%;
+    width: 60%;
 }
 .cardImg{
     height: 40px;
@@ -166,7 +166,7 @@ footer li{
     text-decoration: underline;
 }
 .readytowatch{
-    margin-top: 7%;
+    margin-top: 10%;
     font-weight: 500;
 }
 
@@ -233,11 +233,17 @@ footer{
     width: 80px;
     margin-top: 20px;
 }
-
+    #Herocontent{
+    height: 90vh;
+}
 
 }
 
  @media(min-width:768px){
+
+        #Herocontent{
+    height: 90vh;
+}
     .carousel-inner .row{
         margin-left:0;
         position: relative;
@@ -271,13 +277,7 @@ footer{
     position: absolute;
     top: 40%;
 }
-.herosection{
-    height: 70vh;
+    #Herocontent{
+    height: 85vh;
 }
-#Herocontent{
-    align-items: flex-start;
-    margin-top: 15%;
-
-}
-
     }
