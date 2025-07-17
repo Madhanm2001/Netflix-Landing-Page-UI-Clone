@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/netflix.css">
+</head>
+
+<body class="bg-black">
+    <div class="container-fluid herosection">
+        <nav class="row py-3">
+            <div class="col-5">
+                <img class="img-fluid logo" src="./images/download.png" alt="">
+            </div>
+            <div class="col-7 d-flex mt-2">
+                <div class="ms-auto">
+                    <select class="px-4 py-1 py-md-2 rounded language">
+                        <option class="text-black" value="English">English</option>
+                        <option class="text-black" value="Hindi">Hindi</option>
+                    </select>
+                    <button class="btn signInbtn px-3 py-1 ms-2 mb-1 text-white">Sign In</button>
+                </div>
+            </div>
+        </nav>
+        <section id="Herocontent" class="row text-center text-white">
+            <div class="col">
+                <div class="contentdiv">
+                    <h1>Unlimited movies, TV</h1>
+                    <h1>shows and more</h1>
+                </div>
+                <h6 class="mt-3">Starts at ₹149. cancel at any time.</h6>
+                <div class="mt-4 mt-md-4">
+                    <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
+                    <div class="d-md-flex d-block form-group mx-auto mt-3 gap-3 formEmail">
+                        <input type="text" class="form-control custom-placeholder text-white" id='emailInput' placeholder="Email Address">
+                        <button class="btn text-white" id="getStartbtn">Get Started ></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container mt-5 px-4">
+        <h4 class="text-white mx-0 mx-md-4">Trending Now</h4>
+        <div id="multiCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ms-lg-3">
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-1.jpeg" class="img-fluid">
+                            <h1 class="number">1</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-2.jpeg" class="img-fluid">
+                            <h1 class="number">2</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-3.jpeg" class="img-fluid">
+                            <h1 class="number">3</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-4.jpeg" class="img-fluid">
+                            <h1 class="number">4</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row ms-lg-3">
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-5.jpeg" class="img-fluid">
+                            <h1 class="number">5</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-6.jpeg" class="img-fluid">
+                            <h1 class="number">6</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-7.jpeg" class="img-fluid">
+                            <h1 class="number">7</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-1.jpeg" class="img-fluid">
+                            <h1 class="number">10</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row ms-lg-3">
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-5.jpeg" class="img-fluid">
+                            <h1 class="number">5</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2 d-none d-md-block">
+                            <img src="./images/movie-6.jpeg" class="img-fluid">
+                            <h1 class="number">6</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-5.jpeg" class="img-fluid">
+                            <h1 class="number">5</h1>
+                        </div>
+                        <div class="col-5 col-md-2 movie-item px-2">
+                            <img src="./images/movie-6.jpeg" class="img-fluid">
+                            <h1 class="number">6</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#multiCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#multiCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container mt-5 px-4 px-sm-3">
+        <h4 class="text-white mb-3 mx-0 mx-md-4">More reasons to join</h4>
+<div class="row d-flex justify-content-center mx-sm-0 mx-auto mt-4">
+            <div class="col-12 col-lg-5 mx-lg-2 ms-xl-3 col-xl-2 card p-3">
+                <h4 class="text-white" class="text-white">Madhan kumar is Always GOAT</h4>
+                <p class="text-white my-2">Madhan kumar is Always GOAT.Madhan kumar is Always GOAT</p>
+                <img src="./images/download.png" class="cardImg ms-auto" alt="">
+            </div>
+            <div class="col-12 col-lg-5 mx-lg-2 ms-xl-3 col-xl-2 card p-3">
+                <h4 class="text-white" class="text-white">Madhan kumar is Always GOAT</h4>
+                <p class="text-white my-2">Madhan kumar is Always GOAT.Madhan kumar is Always GOAT</p>
+                <img src="./images/download.png" class="cardImg ms-auto" alt="">
+            </div>
+            <div class="col-12 col-lg-5 mx-lg-2 ms-xl-3 col-xl-2 card p-3">
+                <h4 class="text-white" class="text-white">Madhan kumar is Always GOAT</h4>
+                <p class="text-white my-2">Madhan kumar is Always GOAT.Madhan kumar is Always GOAT</p>
+                <img src="./images/download.png" class="cardImg ms-auto" alt="">
+            </div>
+            <div class="col-12 col-lg-5 mx-lg-2 ms-xl-3 col-xl-2 card p-3">
+                <h4 class="text-white" class="text-white">Madhan kumar is Always GOAT</h4>
+                <p class="text-white my-2">Madhan kumar is Always GOAT.Madhan kumar is Always GOAT</p>
+                <img src="./images/download.png" class="cardImg ms-auto" alt="">
+            </div>
+        </div>        
+    </div>
+    <div class="container mt-5 px-4 px-md-5">
+        <h4 class="text-white">Frequently Asked Questions</h4>
+        <div class="mt-4">
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">What is Netflix?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">How much does Netflix cost?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">Where can I watch?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">How do I cancel?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">What can I watch on Netflix?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        <div class="row faqcontent">
+            <div class="col-9 col-md-11 mt-2">Is Netflix good for kids?</div>
+            <div class="col plusFaq">+</div>
+        </div>
+        </div>
+        <div class="readytowatch mt-5">
+<p class="text-white text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+         <div class="d-md-flex d-block form-group mx-0 mx-sm-auto mt-3 gap-3 formEmail">
+                        <input type="text" class="form-control custom-placeholder text-white" id='emailInput' placeholder="Email Address">
+                        <button class="btn text-white getStartbtndown" id="getStartbtn">Get Started ></button>
+                    </div>
+        </div>
+        
+    </div>
+    <footer class="container">
+        <h6 class="mt-5 mx-3 mx-sm-5">Questions? Call <span class="text-decoration-underline">000-800-919-1743</span></h6>
+            <div class="mt-5 mx-3 mx-sm-0">
+                <ul class="row list-inline">
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">FAQ</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Help Centre</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Account</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Media Centre</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Investor Relations</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Jobs</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Ways to Watch</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Terms of Use</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Privacy</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Cookie Preferences</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Corporate Information</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Contact Us</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Speed Test</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Legal Notices</li>
+                    <li class="col-12 col-sm-3 col-lg-2 ms-sm-5 my-1 list-inline-item">Only on Netflix</li>
+                </ul>
+            </div>
+            <div class="mt-5 mx-3 mx-sm-5">
+                <select class="px-4 py-1 rounded languagefooter">
+                        <option class="text-black" value="English">English</option>
+                        <option class="text-black" value="Hindi">Hindi</option>
+                    </select>    
+            </div>
+            <div class="my-5 mx-3 mx-sm-5">
+            <p class="netflixindia">Netflix India</p>
+            <p class="copyRights">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span class="list-inline-item text-primary cursor-pointer">Learn more.</span></p>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

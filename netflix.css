@@ -1,0 +1,273 @@
+body {
+    overflow-x: hidden;
+}
+
+.herosection {
+    background-image: url("./images/netflixbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -1;
+}
+
+.herosection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 0;
+}
+h6{
+    font-size: 1.1rem;
+}
+
+#emailInput {
+    height: 50px;
+    background: none;
+}
+
+#getStartbtn {
+    height: 3rem;
+    width: 15rem;
+    font-weight: 700;
+    font-size: larger;
+    background: red;
+}
+
+.signInbtn{
+        background: red;
+}
+
+.movie-item {
+    position: relative;
+    background: black;
+    padding:2%;
+    cursor: pointer;
+}
+.movie-item:hover{
+    scale: 1.1;
+    transition: .2s;
+}
+.carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .carousel-inner{
+        position: relative;
+        left: 4%;
+    }
+    .carousel-inner .row{
+        margin-left: 5%;
+    }
+    .treadingtext{
+        margin-top: 3%;
+        margin-left: 6%;
+        font-weight: 600;
+    }
+
+    
+   
+
+.movie-item .number {
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    color: rgb(0, 0, 0);
+    font-size: 4.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 5;
+    text-shadow:
+      -1px -1px 0 #ffffff,
+       1px -1px 0 #ffffff,
+      -1px  1px 0 #ffffff,
+       1px  1px 0 #ffffff;
+}
+
+
+
+
+#Herocontent h1 {
+    font-size: 3.3rem;
+    font-weight: 900;
+}
+
+#Herocontent {
+    display: flex;
+    margin-top: 10%;
+}
+
+.herosection .row {
+    position: relative;
+    z-index: 1;
+    padding: 0 10%;
+    max-height: 100%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.language {
+    background: none;
+    color: white;
+    border: 2px rgb(163, 163, 163) solid;
+    border-radius: 3px;
+}
+
+.languagefooter{
+    background: none;
+    color: rgb(163, 163, 163);
+    border: 2px rgb(163, 163, 163) solid;
+    border-radius: 3px;
+}
+.formEmail{
+    width: 70%;
+}
+.cardImg{
+    height: 40px;
+    width: 80px;
+    margin-top: 75px;
+}
+.plusFaq{
+    font-size:xx-large;
+}
+.card{
+    background: linear-gradient(rgb(34, 56, 100),rgb(26, 0, 26));
+    padding: 2% 1%;
+    max-width: 100%;
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+.faqcontent{
+    background-color: rgb(48, 48, 48);
+    color: #ffffff;
+    padding:2%;
+    margin: 8px 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.faqcontent:hover{
+    background-color: rgb(77, 76, 76);
+}
+footer{
+        color: rgb(163, 163, 163);
+}
+footer li{
+    list-style: none;
+    color: rgb(163, 163, 163);
+    font-size:14.5px;
+    text-decoration: underline;
+}
+.readytowatch{
+    margin-top: 7%;
+    font-weight: 500;
+}
+
+.custom-placeholder::placeholder {
+      color: rgb(163, 163, 163);
+}
+
+.netflixindia{
+    font-size: 15px;
+}
+.copyRights{
+    font-size: 13px;
+}
+footer h6{
+    font-size: 16px;
+    margin-top: 7%;
+}
+@media (max-width:500px) {
+    .formEmail{
+    width: 100%;
+}
+footer{
+      padding: 0 50px;
+}
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 100px;
+        margin-top: 8px;
+    }
+    #signInbtn{
+        font-size: small;
+    }
+
+    #emailInput {
+        padding: 0 20px;
+    }
+
+    #Herocontent h1 {
+        font-size: 2rem;
+        width: 100%;
+        font-weight: 900;
+    }
+
+    #herocontent h5 {
+        font-size: 10px;
+    }
+    .herosection .row {
+        padding: 0 10px;
+    }
+
+    #getStartbtn {
+        font-size: 15px;
+        margin-top: 10px;
+        width: 10rem;
+    }
+
+    .language {
+        width: 10px;
+    }
+.cardImg{
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+
+}
+
+ @media(min-width:768px){
+    .carousel-inner .row{
+        margin-left:0;
+        position: relative;
+        left:5%
+    }
+    .movie-item{
+        margin-left:25px;
+    }
+    #getStartbtn {
+    font-size: 15px;
+}
+    
+    .movie-item .number{
+        font-size: 5rem;
+    position: absolute;
+    top: 40%;
+}
+    }
+
+     @media(min-width:992px){
+        .movie-item .number{
+    position: absolute;
+    top: 55%;
+}
+#getStartbtn {
+    font-size: 1.2rem;
+}
+    }
+ @media(max-width:480px){
+        .movie-item .number{
+    position: absolute;
+    top: 40%;
+}
+
+    }
