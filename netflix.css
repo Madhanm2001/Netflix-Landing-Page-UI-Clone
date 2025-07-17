@@ -271,5 +271,13 @@ footer{
     position: absolute;
     top: 40%;
 }
+.herosection{
+    height: 60vh;
+}
+#Herocontent{
+    align-items: flex-start;
+    margin-top: 20%;
+
+}
 
     }
